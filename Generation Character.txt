@@ -1,0 +1,93 @@
+#include<iostream>
+using namespace std;
+string generation(char b,int a)
+{
+	string x;
+	if(b=='m')
+	{
+	if(a==0)
+	{
+		   x="me!";
+		   return x;	
+	}
+    if(a==1)
+	{
+		x="son!";
+		   return x;
+	}
+	if(a==2)
+	{
+	x="Grandson!";
+		   return x;
+	}
+	if(a==3)
+	{
+	x="Great grand son!";
+		   return x;
+	}
+	if(a==-3)
+	{
+	x="Great Grand father!";
+		   return x;
+	}
+	if(a==-2)
+	{
+		x="Grand Father!";
+		   return x;
+	}
+	if(a==-1)
+	{
+		x="Father!";
+		   return x;
+	}
+	}
+	else
+	{
+		if(a==0)
+	{
+		   x="me!";
+		   return x;	
+	}
+     if(a==1)
+	{
+		x="Mother!";
+		   return x;
+	}
+	if(a==2)
+	{
+	x="GrandDaughter";
+		   return x;
+	}
+	if(a==3)
+	{
+	x="Great grand Daughter!";
+		   return x;
+	}
+	if(a==-3)
+	{
+	x="Great Grand Mother!";
+		   return x;
+	}
+	if(a==-2)
+	{
+		x="Grand Mother!";
+		   return x;
+	}
+	if(a==-1)
+	{
+		x="Mother!";
+		   return x;
+	}
+	}
+}
+main()
+{
+	int gn;
+	char gc;
+	cout<<"Enetr your Generation character......";
+	cin>>gc;
+	cout<<"Enter your Generation Number....";
+	cin>>gn;
+	
+	cout<<generation(gc,gn);
+}

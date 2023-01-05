@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+double volum_pyramid(int l , int w , int h , string u)
+{
+	double v;
+	if(u=="milimeter")
+	{
+	v=(l*w*h/3.0)*1000;
+	return v;
+	}
+	if(u=="centimeter")
+	{
+		v=(l*w*h/3.0)*100;
+		return v;
+	}
+	if(u=="kilometer")
+	{
+		v=(l*w*h/3.0)/1000*1000*1000;
+		return v;
+	}
+}
+main()
+{
+	int len,width, hight;
+	string unit;
+	cout<<"Enter the length in meter....";
+	cin>>len;
+	cout<<"Enter the width in meter....";
+	cin>>width;
+	cout<<"Enter the hight in meter....";
+	cin>>hight; 
+	cout<<"Enter the unit...";
+	cin>>unit;
+	cout<<"Volume of payramid is...."<<volum_pyramid(len,width, hight, unit);
+//	V=lwh/3
+
+}

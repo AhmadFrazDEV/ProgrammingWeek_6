@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+int calculator(int a,char op, int b)
+{
+	if (op=='+')
+	{
+		int c=a+b;
+		return c;
+	}
+	if (op=='-')
+	{
+		int c=a-b;
+		return c;
+	}
+	if (op=='*')
+	{
+		int c=a*b;
+		return c;
+	}
+	if (op=='/')
+	{
+		int c=a/b;
+		return c;
+	}
+}
+
+main()
+{
+	int num1, num2;
+	char op;
+	cout<<"Enter first number...";
+	cin>>num1;
+	cout<<"Enter first number...";
+	cin>>num2;
+	cout<<"Enter operator...";
+	cin>>op;
+	cout<<num1<<op<<num2<<"="<<calculator(num1,op,num2);
+}

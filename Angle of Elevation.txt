@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+#define rad 57.2958
+using namespace std;
+main()
+{
+	float base , angle;
+	cout<<"Enetr the base....";
+	cin>>base;
+	cout<<"Enetr the angle of elevation....";
+	cin>>angle;
+	float c=angle*0.01745;
+	float d=tan(c);
+	float hight=d*base;
+	cout<<"Hight is...."<<hight;
+	
+ }

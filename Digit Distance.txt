@@ -1,0 +1,27 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int digit_distance(int a, int b)
+{
+	int unit_1=a%10;
+	int ten_1=(a/10)%10;
+	int hun_1=(a/100)%10;
+	
+	int unit_2=b%10;
+	int ten_2=(b/10)%10;
+	int hun_2=(b/100)%10;
+	int result=abs(unit_1-unit_2) + abs(ten_1-ten_2) + abs(hun_1-hun_2);
+	return result;
+}
+   
+	main()
+	{
+		int num1, num2;
+		cout<<"Enter number.... ";
+		cin>>num1;
+		cout<<"Enter number.... ";
+		cin>>num2;
+		int c=digit_distance(num1 , num2);
+		cout<<"Digit distance is...."<<c;
+		
+	}

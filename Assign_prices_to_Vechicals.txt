@@ -1,0 +1,108 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+float tax_calculator(string type, float price)
+{
+	if(type=="Motercycle")
+	{
+		float tex_amount=price*6.0/100.0;
+		float final_amount=price+tex_amount;
+		return final_amount;
+	}
+	
+	if(type=="Electric")
+	{
+		float tex_amount_1=price*8.0/100.0;
+		float final_amount_1=price+tex_amount_1;
+		return final_amount_1;
+	}
+	
+	if(type=="Sedan") //Sedan
+	{
+		float tex_amount_2=price*10.0/100.0;
+		float final_amount_2=price+tex_amount_2;
+		return final_amount_2;
+	}
+	
+		if(type=="Van") //Van
+	{
+		float tex_amount_3=price*12.0/100.0;
+		float final_amount_3=price+tex_amount_3;
+		return final_amount_3;
+	}
+	
+	if(type=="Truck") //Truck
+	{
+		float tex_amount_4=price*18.0/100.0;
+		float final_amount_4=price+tex_amount_4;
+		return final_amount_4;
+	}
+}
+   
+	main()
+	{
+	    string type;
+	    char code;
+	    float price;
+	    cout<<"Enter the type of vichicle....";
+	    cin>>type;
+	    if(type=="Motercycle")  //moter cycle
+	    {
+	    	cout<<"ENter the code of vehical...";
+	    	cin>>code;
+	    	if(code=='M')
+	    	{
+	    	cout<<"Enter the price of vehical...";
+	    	cin>>price;
+	    	cout<<"your total price is...."<<tax_calculator(type , price);
+	    	}
+		}
+		
+		if(type=="Electric")   //Electric
+	    {
+	    	cout<<"ENter the code of vehical...";
+	    	cin>>code;
+	    	if(code=='E')
+	    	{
+	    	cout<<"Enter the price of vehical...";
+	    	cin>>price;
+	    	cout<<"your total price is...."<<tax_calculator(type , price);
+	    	}
+		}
+ 		
+ 			if(type=="Sedan")   //Sedan
+	    {
+	    	cout<<"ENter the code of vehical...";
+	    	cin>>code;
+	    	if(code=='S')
+	    	{
+	    	cout<<"Enter the price of vehical...";
+	    	cin>>price;
+	    	cout<<"your total price is...."<<tax_calculator(type , price);
+	    	}
+		}
+		
+			if(type=="Van")   //Van
+	    {
+	    	cout<<"ENter the code of vehical...";
+	    	cin>>code;
+	    	if(code=='V')
+	    	{
+	    	cout<<"Enter the price of vehical...";
+	    	cin>>price;
+	    	cout<<"your total price is...."<<tax_calculator(type , price);
+	    	}
+		}
+		
+		if(type=="Truck")   //Truck
+	    {
+	    	cout<<"ENter the code of vehical...";
+	    	cin>>code;
+	    	if(code=='T')
+	    	{
+	    	cout<<"Enter the price of vehical...";
+	    	cin>>price;
+	    	cout<<"your total price is...."<<tax_calculator(type , price);
+	    	}
+		}
+	}  //main bracket

@@ -1,0 +1,18 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int hi(int a, float b)
+{
+	cout<<"You entered"<<a<<endl;
+	cout<<"You enter ed..."<<b;
+}
+main()
+{
+	int num1;
+	float num2;
+	cout<<"Enter the integer....";
+	cin>>num1;
+	cout<<"Enter the float....";
+	cin>>num2;
+	cout<<hi(num1, num2);
+ }

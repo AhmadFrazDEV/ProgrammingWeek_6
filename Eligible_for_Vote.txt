@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+string vote(int age)
+{
+	string masg;
+	if(age>=18)
+	{
+		
+		cout<<"Eligible...";
+		return masg;
+	}
+	else
+	{
+		cout<<"Not Eligible...";
+		return masg;
+	}
+}
+main()
+{
+	int age;
+	cout<<"Enter your age...";
+	cin>>age;
+	cout<<vote(age);
+	
+}
+

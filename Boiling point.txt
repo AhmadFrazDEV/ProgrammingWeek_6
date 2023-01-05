@@ -1,0 +1,21 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+bool Boiling_point(int a, char b)
+{
+	if(a==212 && b=='F')  return true;
+	else if(a==100 && b=='C') return true;
+	else return false;
+	
+	
+}
+   
+	main()
+	{
+	    int num; char ch;
+	    cout<<"Enter Temprature...";
+	    cin>>num>>ch;
+		int c=Boiling_point(num , ch);
+		cout<<"Digit distance is...."<<c;
+		
+	}

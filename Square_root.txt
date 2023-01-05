@@ -1,0 +1,31 @@
+/*_____________Program for Square root________*/
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+main()
+{
+	int a,b;
+	cout<<"Enter the number...";
+	cin>>a;
+	float c=sqrt(a);
+	cout<<"Square root of the number is..."<<c;
+}
+
+
+/*____________Program for Power__________*/
+
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+main()
+{
+	int a,b;
+	cout<<"Enter the number...";
+	cin>>a;
+	cout<<"Enter the power....";
+	cin>>b;
+	float c=pow(a,b);
+	cout<<"Square root of the number is..."<<c;
+}

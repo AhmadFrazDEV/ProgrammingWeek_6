@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int equal(int a, int b, int c)
+{
+	if(a==b && a==c)
+	{
+	
+		cout<<"3"<<endl;
+		return a;
+	}
+	
+	if(b==a || b==c)
+	{
+		cout<<"2"<<endl;
+		return b;
+	}
+	
+	if
+	{
+		
+		cout<<"0"<<endl;
+		return c;
+	}
+}
+main()
+{
+	
+		
+	int n1,n2,n3;
+	cout<<"Enter three numbers...";
+	cin>>n1>>n2>>n3;
+	cout<<"There are equal numbers are....."<<equal(n1,n2,n3);
+	return 0;
+	
+}

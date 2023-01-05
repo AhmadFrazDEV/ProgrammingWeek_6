@@ -1,0 +1,54 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+string alphabet(char ch)
+{
+	string masage;
+	if(ch=='A' || ch=='B' || ch=='C' || ch=='D' || ch=='E' || ch=='F' || ch=='G' || ch=='H' || ch=='I' || ch=='J' || ch=='K' || ch=='L' ||ch=='M' || ch=='N' || ch=='O' || ch=='P' || ch=='Q' || ch=='R' || ch=='S' || ch=='T' || ch=='U' || ch=='V' || ch=='W' || ch=='X' || ch=='Y' || ch=='Z' )
+	{
+		cout<<"You Entered Uppercase....";
+		return masage;
+	}
+	else
+	{
+		cout<<"You Entered Lowercase";
+		return masage;
+	}
+}
+   
+	main()
+	{
+		char alpha;
+		cout<<"Enter any alphabet....";
+		cin>>alpha;
+		cout<<alphabet(alpha);
+	
+	}  //main bracket
+
+
+
+
+// It can be done by using loop
+
+#include<iostream>
+using namespace std;
+
+main()
+{
+	char ch;
+	cin>>ch;
+	for(char a ='a';a<='z' ; a++)
+	{
+		if(ch==a)
+		{
+			cout<<"Lowercase";
+			break;
+		}
+		else
+		{
+			cout<<"UperCase";
+			break;
+		}
+	}
+	
+}

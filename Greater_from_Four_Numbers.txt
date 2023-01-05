@@ -1,0 +1,148 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int max(int a, int b, int c, int d)
+
+{
+	if(a>b)
+	{
+		if(a>c)
+		{
+			if(a>d)
+			{
+				cout<<"A is greater";
+				return a;
+			}
+			else
+			{
+				cout<<"D is greater";
+				return d;
+			}
+		}
+		else
+		{
+			if(c>b)
+			{
+				if(c>d)
+				{
+					cout<<"C is greater";
+					return c;
+				}
+				else
+				{
+					cout<<"D is greater";
+					return d;
+				}
+			}
+		}
+	}
+	else
+	{
+		if(b>c)
+		{
+			if(b>d)
+			{
+				cout<<"B is greater";
+				return b;
+			}
+			else
+			{
+				cout<<"D is greater";
+				return d;
+			}
+		}
+		else
+		{
+			if(c>d)
+			{
+				cout<<"C is greater";
+				return c;
+			}
+			else
+			{
+				cout<<"B is greater";
+				return b;
+			}
+		}
+	}
+}
+
+int min(int a, int b, int c, int d)
+   {
+   		if(a<b)
+	{
+		if(a<c)
+		{
+			if(a<d)
+			{
+				cout<<"A is Smaller";
+				return a;
+			}
+			else
+			{
+				cout<<"D is Smaller";
+				return d;
+			}
+		}
+		else
+		{
+			if(c<b)
+			{
+				if(c<d)
+				{
+					cout<<"C is Smaller";
+					return c;
+				}
+				else
+				{
+					cout<<"D is Smaller";
+					return d;
+				}
+			}
+		}
+	}
+	else
+	{
+		if(b<c)
+		{
+			if(b<d)
+			{
+				cout<<"B is Smaller";
+				return b;
+			}
+			else
+			{
+				cout<<"D is Smaller";
+				return d;
+			}
+		}
+		else
+		{
+			if(c>d)
+			{
+				cout<<"C is Smaller";
+				return c;
+			}
+			else
+			{
+				cout<<"B is Smaller";
+				return b;
+			}
+		}
+	}
+   }
+	main()
+	{
+		int num1 , num2 , num3, num4;
+		cout<<"Enter First Number :";
+		cin>>num1;
+		cout<<"Enter Second Number :";
+		cin>>num2;
+		cout<<"Enter Third Number :";
+		cin>>num3;
+		cout<<"Enter Fourth Number :";
+		cin>>num4;
+		cout<<"Maximium Number is...."<<max(num1,num2,num3,num4)<<endl;
+		cout<<"Minimiun Number is...."<<min(num1,num2,num3,num4);
+	
+	}  //main bracket
